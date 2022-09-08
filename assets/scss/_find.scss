@@ -1,0 +1,275 @@
+// find job section
+
+.find_job {
+    background: $bgColor;
+     width: 100%; 
+     height: 100%;
+ 
+    .container {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+    }
+ 
+    .uptitle {
+     width: 100%;
+     height: 100%;
+       }
+ 
+       @media (min-width: 445px) {
+         .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 50px 0;
+            padding-right: 20px;
+            padding-left: 20px;
+    
+            .uptitle {
+                width: 400px;
+                height: 300px;
+                text-align: left;
+              }
+        }
+    }
+ 
+            @media (min-width: 768px) {
+             .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 15px;
+                padding: 50px 0;
+                padding-right: 20px;
+                padding-left: 20px;
+        
+                .uptitle {
+                    width: 400px;
+                    height: 300px;
+                    text-align: left;
+                  }
+            }
+        }
+     }
+ 
+ 
+ .uptitle {
+ 
+     h1 {
+         font-weight: 900;
+         font-size: 24px;
+         transition: color .7s;
+         position: relative;
+ 
+         &::before{
+             content: 'Знайдіть віддалену роботу вашої мрії';
+             position: absolute;
+             top: 0;
+             left: 0;
+             color: #1A75E8;
+             transform: scaleX(0);
+             transform-origin: left;
+ 
+         }
+ 
+         &:hover::before {
+             transform: scaleX(1);
+         }
+ 
+         // &:hover {
+         //     color: #1A75E8;
+         // }
+     }
+ 
+     p {
+         font-size: 16px;
+     }
+ }
+ 
+ @media (min-width: 768px) {
+        .uptitle p {
+          font-size: 18px;
+          margin-bottom: 25px;
+        }
+ }
+ 
+ @media (min-width: 768px) {
+         .uptitle h1 {
+                 font-size: 44px;
+             }
+ }
+ 
+ .uptitle_img img{
+         margin: 0 auto;
+         display: block;
+         position: relative;
+         width: 250px;
+         height: 260px;
+ 
+         @media (min-width: 445px) {
+             & {
+                 width: 300px;
+                 height: 310px;
+             }
+         }
+    
+         @media (min-width: 768px) {
+                &  {
+             width: 310px;
+             height: 430px;
+         }
+     }
+         @media (min-width: 820px) {
+             & {
+                 width: 355px;
+                 height: 390px;
+             }
+         }
+ 
+         @media (min-width: 1024px) {
+              & {
+                 width: 545px;
+                 height: 560px;
+              }
+         }  
+ }
+ 
+ .uptitle_form_block {
+     background-color: #ffffff;
+     width: 290px;
+ }
+ 
+ .uptitle_form {
+     display:flex;
+     flex-direction: row;
+     border: 1px solid rgba(209, 209, 209, 0.1);
+     box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+     border-radius: 5px;
+     color: #ffffff;
+     width: 290px;
+     height: 70px;
+ 
+           &_search {
+            flex-grow:2;
+            border:none;
+            padding: 25px;
+ 
+            &:focus {
+             outline: none;
+           }
+     }
+          &_btn {
+             width: 68px;
+             height: 45px;
+             padding: -5px 30px;
+             background-color: #1A75E8;
+             color: white;
+             border: none;
+             border-radius: 5px;
+             margin-top: 15px;
+             position: relative;
+             left: -10px;
+             top: -4px;
+ 
+          &_text {
+             opacity: 0;
+             color:white;
+             position: absolute;
+         }
+     }
+ }
+ 
+ @media (min-width: 375px) {
+     .uptitle_form_block {
+         margin-left: auto;
+         margin-right: auto;
+     } 
+ }
+ 
+ @media (min-width: 425px) {
+     .uptitle_form_block {
+         margin-left: 0;
+ 
+     } 
+     .uptitle_form {
+         width: 390px;
+         height: 70px;
+         background-color: #ffffff;
+         }
+ }
+ 
+ @media (min-width: 524px) {
+     .uptitle_form_block {
+          margin: 0;
+     }
+ 
+ .uptitle_form_btn {
+     width: 220px;
+     height: 49px; 
+     left: -10px; 
+     top: -5px;
+ 
+     &_text {
+         position: relative;
+         opacity: 1;
+         padding: 5px;
+     }
+     }
+ }
+ 
+ .uptitle_form_btn img {
+     width: 15px;
+     height: 15px;
+     background-color: #1A75E8;
+     margin: 0;
+ }
+ 
+ .for_example {
+     margin-left: 25px;
+     margin-top: 25px;
+     color: #B2B2B2;
+     font-size: 14px;
+     display: flex;
+     flex-direction: column;
+ 
+     .first_example {
+         color: #B2B2B2;
+         width: 100%;
+         margin-left: -60px;
+     }
+ }
+ 
+ .example {
+     display: flex;
+     gap: 5px;
+     margin-top: 15px;
+     margin-bottom: 50px;
+ }
+ 
+  .examples {
+         border: 1px solid #B2B2B2;
+         border-radius: 5px;
+         padding: 5px 10px;
+         font-size: 14px;
+         color: #B2B2B2;
+       }
+ 
+ @media (min-width: 425px) {
+     .for_example {
+         display: flex;
+         flex-direction: row;
+ 
+         .first_example {
+             margin: 10px;
+         }
+ 
+         .example {
+             margin-top: -5px;
+         }
+     }
+ }

@@ -1,0 +1,46 @@
+.category {
+    .container {
+        display: flex;
+        column-gap: 30px;
+        justify-content: space-around;
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+    }
+
+    .box {
+        background-color: #F2F3F6;
+        width: 166px;
+        height: 128px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        transition-duration: 0.5s, 0.5s;
+        transition-property: color, background-color;
+        transition-timing-function: ease-in-out;
+        @media (max-width: 425px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0;
+            border: 0;
+        }
+    }
+
+    .img_text {
+        padding-top: 30px;
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+.box:hover {
+    background-color: #1A75E8;
+    transition-duration: 0.5s, 0.5s;
+    transition-property: color, background-color;
+    transition-timing-function: ease-in;
+    color: white;
+    cursor: pointer;
+}

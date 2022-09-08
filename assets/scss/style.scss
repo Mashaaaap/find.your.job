@@ -1,0 +1,57 @@
+// vars
+$font: 'Fira Sans';
+$btnColor: #1A75E8;
+$bgColor: #F2F3F6;
+
+// global ctyles 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 16px;
+    color: #21243D;
+    text-align: center;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 1150px;
+    margin: 0 auto;
+    max-width: 100%
+}
+
+h2 {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #111238;
+    list-style: none;
+}
+
+// header
+@import 'header';
+
+// find job
+@import 'find';
+
+// category
+@import 'category';
+
+// vacation
+@import 'vacation';
+
+// email
+@import 'email';
+
+// footer
+@import 'footer';
