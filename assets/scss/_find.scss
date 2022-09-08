@@ -65,20 +65,11 @@
          font-size: 24px;
          transition: color .7s;
          position: relative;
+         transition: 0.3s;
  
-         &::before{
-             content: 'Знайдіть віддалену роботу вашої мрії';
-             position: absolute;
-             top: 0;
-             left: 0;
-             color: #1A75E8;
-             transform: scaleX(0);
-             transform-origin: left;
- 
-         }
- 
-         &:hover::before {
-             transform: scaleX(1);
+         &:hover {
+            color: #1A75E8;
+            transition: 0.3s;
          }
  
          // &:hover {
